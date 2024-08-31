@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Made Easy!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <div class="container">
+            <p>Task Management Made Easier.</p>
+            <h1>Your Day-To-Day Task Manager</h1>
+            <div class="col-lg-8 m-auto">
+                <div class="addTask">
+                    <h2>Add New Task</h2>
+                    <div class="task-input">
+                        <input type="text" id="task-input" placeholder="Enter a new task..." required>
+                        <button onclick="addTask()">Add Task</button>
+                    </div>
+                </div>
+                <div class="addTask taskList">
+                    <h2>Your Task List</h2>
+                    <ul id="task-list"></ul>
+                </div>
+
+                <!-- Edit Task Popup -->
+                <div id="edit-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Edit Task</h2>
+                        <input type="text" id="edit-task-input" placeholder="Edit your task...">
+                        <button onclick="saveTaskEdit()">Update Task</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
